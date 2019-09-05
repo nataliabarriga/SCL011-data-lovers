@@ -10,6 +10,10 @@ window.dataRickAndMorty= dataRickAndMorty;
 
 let condition1 = document.getElementById("1").value; // crea la condicion "1" - especies * le doy el valor
 const filterData = (dataRickAndMorty,condition1) =>{ // constante del filtrado
+
+const selectName = document.querySelector (".options");
+selectName.addEventListener("change",)
+
   let filterResult = [""]; // hacer un evento change, ya que el usuario elige el valor, como rellenar el select la condicion sale de los valores del select 
   for(let i=0; i < dataRickAndMorty.length; i++){ // recorrido
     if (dataRickAndMorty[i] == condition1){ // si la data de rick and morty es igual a la condicion 1, 
@@ -18,6 +22,12 @@ const filterData = (dataRickAndMorty,condition1) =>{ // constante del filtrado
     };
   };
 }
+
+const selectElement = document.querySelector('.nieve');
+
+selectElement.addEventListener('change', (event) => {
+    const resultado = document.querySelector('.resultado');
+    resultado.textContent = `Te gusta el sabor ${event.target.value}`;
 
 // como plantear la condicion, si esta bien la estructura 
 
