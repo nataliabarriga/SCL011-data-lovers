@@ -1,55 +1,64 @@
-/* Manejo de data */
-const dataRickAndMorty = RICKANDMORTY.results;
-window.dataRickAndMorty= dataRickAndMorty;
+// /* Manejo de data */
 
 /* FILTRADO */
 /*filterData(data, condition)*/
-/* Condition1 species */
+window.filter = {
+  species: (dataRickAndMorty,condition) =>{
 
-// dos paremetros - condicion y "lo que dice el usuario"
-
-let condition1 = document.getElementById("1").value; // crea la condicion "1" - especies * le doy el valor
-const filterData = (dataRickAndMorty,condition1) =>{ // constante del filtrado
-  let filterResult = [""]; // hacer un evento change, ya que el usuario elige el valor, como rellenar el select la condicion sale de los valores del select 
-  for(let i=0; i < dataRickAndMorty.length; i++){ // recorrido
-    if (dataRickAndMorty[i] == condition1){ // si la data de rick and morty es igual a la condicion 1, 
-        filterResult.push(dataRickAndMorty[i].species); // si el resultado se cumple, push arroja valores al inicio de la variable
-        console.log(filterResult);
+    let speciesResult = [""];
+    for(let i=0; i < dataRickAndMorty.length; i++){
+      if (dataRickAndMorty[i].species == condition){
+        console.log(dataRickAndMorty[i].species);
+      };
     };
-  };
+    return speciesResult;
+  }
 }
 
-// como plantear la condicion, si esta bien la estructura 
+// // dos paremetros - condicion y "lo que dice el usuario"
 
-/*sortBy, nos dice con respecto a cuál de los campos de la data se quiere ordenar.
-sortOrder, indica si se quiere ordenar de manera ascendente o descendente.*/
+// // let condition1 = document.getElementById("1").value; // crea la condicion "1" - especies * le doy el valor
+// // const filterData = (dataRickAndMorty,condition1) =>{ // constante del filtrado
+// //   let filterResult = [""]; // hacer un evento change, ya que el usuario elige el valor, como rellenar el select la condicion sale de los valores del select 
+// //   for(let i=0; i < dataRickAndMorty.length; i++){ // recorrido
+// //     if (dataRickAndMorty[i] == condition1){ // si la data de rick and morty es igual a la condicion 1, 
+// //         filterResult.push(dataRickAndMorty[i].species); // si el resultado se cumple, push arroja valores al inicio de la variable
+// //         console.log(filterResult);
+// //     };
+// //   };
+// // }
 
-// tres parametros - data - sortby - sortOrder
+// // como plantear la condicion, si esta bien la estructura 
 
-let sortBy = dataRickAndMorty.name;
-let sortOrder = document.getElementsByTagName("option").value;/* Tiene que obtener el valor segun lo que diga el usuario, por ejemplo de la a-z=ascendente y de la z-a=descendente */
+// /*sortBy, nos dice con respecto a cuál de los campos de la data se quiere ordenar.
+// sortOrder, indica si se quiere ordenar de manera ascendente o descendente.*/
 
-/* función que me permite ordenar  */
-const sortData = (dataRickAndMorty, sortBy, sortOrder) =>{ // sortby lo que el usuario elige
-  let newOrder = [""]; // variable vacia donde va el resultado del orden 
-  if (sortOrder == "1"){
-    newOrder = dataRickAndMorty.sort((a,b) =>{ // .sort es para generar el orden con parametros (a-b) para hacer comparacion
-      return a.sortBy.localCompare(b.sortBy); // a.sortBy orden por nombre del primer parametro y localCompare para comparar dos parametros
-    });
-  } else (sortOrder == "2")
-    newOrder = dataRickAndMorty.sort ((a,b) =>{
-      return a.sortBy.localCompare(b.sortBy).reverse();
-    });
-console.log(newOrder);
-};
+// // tres parametros - data - sortby - sortOrder
 
-/* SABER SI EL PLANTEADO ESTA BIEN, no tiene paremetros aun */
+// let sortBy = dataRickAndMorty.name;
+// let sortOrder = document.getElementsByTagName("option").value;/* Tiene que obtener el valor segun lo que diga el usuario, por ejemplo de la a-z=ascendente y de la z-a=descendente */
 
-/* esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+// /* función que me permite ordenar  */
+// const sortData = (dataRickAndMorty, sortBy, sortOrder) =>{ // sortby lo que el usuario elige
+//   let newOrder = [""]; // variable vacia donde va el resultado del orden 
+//   if (sortOrder == "1"){
+//     newOrder = dataRickAndMorty.sort((a,b) =>{ // .sort es para generar el orden con parametros (a-b) para hacer comparacion
+//       return a.sortBy.localCompare(b.sortBy); // a.sortBy orden por nombre del primer parametro y localCompare para comparar dos parametros
+//     });
+//   } else (sortOrder == "2")
+//     newOrder = dataRickAndMorty.sort ((a,b) =>{
+//       return a.sortBy.localCompare(b.sortBy).reverse();
+//     });
+// console.log(newOrder);
+// };
 
-const example = () => {
-  return 'example';
-};
+// /* SABER SI EL PLANTEADO ESTA BIEN, no tiene paremetros aun */
 
-window.example = example; */
+// /* esta es una función de ejemplo
+// // puedes ver como agregamos la función a nuestro objeto global window
+
+// const example = () => {
+//   return 'example';
+// };
+
+// window.example = example; */
