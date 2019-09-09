@@ -1,6 +1,6 @@
 * {
-    margin:0;
-    padding:0;
+    margin:50px;
+    padding:50px;
     box-sizing: border-box;
 }
 
@@ -15,7 +15,8 @@ header {
     background: #EFEDED;
     position:fixed;
     width: 100%;
-    top: 0;
+    top: 5px;
+    flex-direction: row;
 }
 
 .menu {
@@ -53,19 +54,27 @@ header {
   }
 
   .menu .menuLinks a:hover {
-      color: #006C12;
+      color: #D000FF;
     }
+ 
+.characterCards {
+    flex-direction: column;
+}
 
-label {
+/* label {
     top: 100px;
     background-color: #EFEDED;
     display:flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
 }
 
+/*
 .cards .img {
     margin: 100px;
     width: 80%;
@@ -76,5 +85,6 @@ label {
     align-items: center;
     justify-content: center;
 }
+
 
 
