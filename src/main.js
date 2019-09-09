@@ -8,11 +8,15 @@ let containerCharacterCards = document.getElementById("result") /*Variable que h
 let characterCards = ""; /* Variable en donde se creará la tarjeta de cada personajes con la respectiva info */
 let allCharacterCards = ""; /* Variable en donde se concatenarán todas las tarjetas de los personajes con la info correspondiente */
 
+
 dataRickAndMorty.forEach((show)=>{ /* Llamado a recorrer la dara para obtener la info de cada personaje */
   characterCards = /* Se llama a la variable de las tarjetas para cada personaje y se rellena con la infor en HTML dinámico */
-  `<div class="cards">
+  
+  `<div class ="characterCards">
+  <div class ="cards">
     <img src="${show.image}" alt="imgCharacter">
     <h3>${show.name}</h3>
+    </div>
   </div>`
 
   allCharacterCards += characterCards; /* La variable de todos los personajes se iguala y concatena a la variable de cada personaje */
@@ -23,8 +27,17 @@ dataRickAndMorty.forEach((show)=>{ /* Llamado a recorrer la dara para obtener la
 
 const filterSelector = document.getElementById("filterSelector");
 filterSelector.addEventListener('change', () => {
-  let condition = filterSelector.value; /* Variable de la condición, esta nos dará el valor que usuario elija para filtrar */
-  console.log(condition);
+  let condition = filterSelector.options[filterSelector.selectedIndex].value;
   
-  let filterSpeciesResult = window.filter.species(dataRickAndMorty,condition);  
+let filterSpeciesResult = window.filter.species(dataRickAndMorty,condition);  
 });
+
+
+// document.getElementById("result").innerHTML="";
+
+
+//let condition = filterSelector.selectedIndex; /* Variable de la condición, esta nos dará el valor que usuario elija para filtrar */
+// console.log(condition); 
+
+
+
