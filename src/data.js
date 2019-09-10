@@ -24,6 +24,7 @@ window.filter = {
 
 
 
+
 // // como plantear la condicion, si esta bien la estructura 
 
 /*sortBy, nos dice con respecto a cuál de los campos de la data se quiere ordenar.
