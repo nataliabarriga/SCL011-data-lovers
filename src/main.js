@@ -2,13 +2,7 @@
 const dataRickAndMorty = RICKANDMORTY.results;
 window.dataRickAndMorty= dataRickAndMorty;
 
-/* Mostrando la data en HTML Dinámico*/
-let containerCharacterCards = document.getElementById("result") 
-/*Variable que hace llamado al elemento de HTML que contendrá todas las tarjetas de los personajes */
-
-let allCharacterCards = ""; 
-/* Variable en donde se concatenarán todas las tarjetas de los personajes con la info correspondiente */
-
+/* Mostrar la data */
 dataRickAndMorty.forEach((show)=>{
 
   let characterCards = document.createElement("div");

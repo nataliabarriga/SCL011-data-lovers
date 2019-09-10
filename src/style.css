@@ -10,6 +10,60 @@ body {
     font-size: 16px;
     padding-top: 65px;
 }
+ /************/
+
+#index, #showCharacters {
+    display: none;
+}
+
+nav{
+    background: #EFEDED;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content:space-between;
+    margin:auto;
+    align-items: center;
+}
+
+.menu .logo img {
+    vertical-align: top;
+    height: 70px;
+}
+
+ul {
+    margin-top: 30px;
+    margin-right: 40px;
+    list-style-type: none;
+    display: flex;
+}
+
+button {
+    background-color: #EFEDED;
+    border: none;
+    color:#6d6a6a;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin: 15px 10px;
+}
+
+button:hover{
+    color: black;
+}
+
+h1{
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+select {
+    border: 1px solid #ccc;
+    width: 140px;
+    background: #fff;
+}
+
+/************/
 
 header {
     background: #EFEDED;
