@@ -33,9 +33,10 @@ dataRickAndMorty.forEach((show)=>{
 /* Función de filtrado */
 
 
-const filterSelector = document.getElementById("filterSelector");
+const filterSelector = document.getElementById("filterSpeciesSelector");
 filterSelector.addEventListener('change', () => {
-let condition = filterSelector.value;
+let condition = filterSelector.options[filterSelector.selectedIndex];
+document.getElementById("showData").innerHTML= "";
   
 let filterSpeciesResult = window.filter.species(dataRickAndMorty,condition);
 console.log(filterSpeciesResult);
@@ -61,6 +62,9 @@ filterSpeciesResult.map((showFilter)=>{
   
 return filterSpeciesResult;
 
+
 });
   
 });
+
+
