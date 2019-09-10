@@ -3,13 +3,23 @@ const dataRickAndMorty = RICKANDMORTY.results;
 window.dataRickAndMorty= dataRickAndMorty;
 
 /* Mostrar la data */
+const btnCharacters = document.getElementById("characters");
+btnCharacters.addEventListener("click", ()=>{
+
+  const showCharacters = document.getElementById("showCharacters");
+  showCharacters.style.display = "block";
+  const hiddenIndex = document.getElementById("index");
+  hiddenIndex.style.display = "none";
+
+});  
+
 dataRickAndMorty.forEach((show)=>{
 
   let characterCards = document.createElement("div");
   characterCards.className = "characterCards"; // para dar estilo en css
   characterCards.id = "characterCards";
 
-  let father = document.getElementById("result"); // caja principal
+  let father = document.getElementById("showData"); // caja principal
   father.appendChild (characterCards);
   characterCards.innerHTML += `<div class ="insideCards">
                           <img src="${show.image}" alt="imgCharacter">
