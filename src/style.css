@@ -1,0 +1,135 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFEDED;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 65px;
+}
+ /************/
+
+#index, #showCharacters {
+    display: none;
+}
+
+nav{
+    background: #EFEDED;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content:space-between;
+    margin:auto;
+    align-items: center;
+}
+
+.menu .logo img {
+    vertical-align: top;
+    height: 70px;
+}
+
+ul {
+    margin-top: 30px;
+    margin-right: 40px;
+    list-style-type: none;
+    display: flex;
+}
+
+button {
+    background-color: #EFEDED;
+    border: none;
+    color:#6d6a6a;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin: 15px 10px;
+}
+
+button:hover{
+    color: black;
+}
+
+h1{
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+select {
+    border: 1px solid #ccc;
+    width: 140px;
+    background: #fff;
+}
+
+/************/
+
+header {
+    background: #EFEDED;
+    position:fixed;
+    width: 100%;
+    top: 0px;
+    flex-direction: row;
+}
+
+.menu {
+    width: 100%;
+    max-width:1000px;
+    margin:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .menu .logo {
+      display:inline-block;
+      margin-right: 1em;
+  }
+  
+  .menu .logo img {
+      vertical-align: top;
+      height: 70px;
+  }
+
+  .menu .menuLinks {
+      display:inline-block;
+      text-align: right;
+  }
+
+  .menu .menuLinks a {
+      color: #454545;
+      text-decoration: none;
+      display: inline-block;
+      padding: 1em;
+      font-size: 1em;
+      font-weight: bolder;
+  }
+
+  .menu .menuLinks a:hover {
+      color: #D000FF;
+    }
+#result {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+ 
+.characterCards {
+    border: 10px;
+    background-color: aquamarine;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.characterCards .insideCards h3 {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    
+}
