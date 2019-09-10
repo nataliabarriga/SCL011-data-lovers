@@ -48,4 +48,23 @@ return finalFilter;
 });
 
   
+/* Orden */
+
+const orderSelector = document.getElementById("orderSelector");
+orderSelector.addEventListener('change', () => {
+
+  let sortOrder = orderSelector.options[orderSelector.selectedIndex].value;
+  let orderResult = window.sort.order(dataRickAndMorty,sortOrder);
+
+document.getElementById("showData").innerHTML="";
+const finalOrder = orderResult.map((showOrder)=>{
+
+    showData.innerHTML += 
+  `<div class ="insideCardsTwo">
+    <img src="${showOrder.image}" alt="imgCharacter">
+    <h3>${showOrder.name}</h3>
+  </div>`
+});
+return finalOrder;
+});
 
