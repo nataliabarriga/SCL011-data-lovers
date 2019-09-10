@@ -36,18 +36,23 @@ let condition = filterSelector.value;
 let filterSpeciesResult = window.filter.species(dataRickAndMorty,condition);
 console.log(filterSpeciesResult);
 
+
 filterSpeciesResult.map((showFilter)=>{
   let printCharacterCards = document.createElement("div");
   printCharacterCards.className = "printCharacterCards"; // para dar estilo en css
   printCharacterCards.id = "printCharacterCards";
 
+  function erase () {
+    document.getElementById("printCharacterCards").innerHTML="";
+   }
+
 
   let secondFather = document.getElementById("printResult");
   secondFather.appendChild(printCharacterCards);
-  printCharacterCards.innerHTML += `<div class ="insideCardsTwo">
+  printCharacterCards.innerHTML += `<div class ="printInsideCards">
                                       <img src="${showFilter.image}" alt="imgCharacter">
                                       <h3>${showFilter.name}</h3>
-                                      <a href="#insideCardsTwo"></a>
+                                      <a href="#printInsideCards"></a>
                                     </div>`
   
 return filterSpeciesResult;
@@ -55,6 +60,3 @@ return filterSpeciesResult;
 });
   
 });
-
-  
-
