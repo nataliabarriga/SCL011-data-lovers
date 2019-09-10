@@ -19,28 +19,38 @@
           <li><button>Curiosidades</button></li>
         </ul>
       </nav>
-     
-      <label>Elija una categoria:
-          <select name="selector" id="filterSelector">
-            <option value="">Seleccione una</option>
-            <option value="Human">Humanos</option>
-            <option value="Alien">Aliens</option>
-            <option value="Humanoid">Humanoides</option>
-          </select>
-        </label>
 
-      <select>
-          <option value="1" id="1">Especie</option>
-          <option value="2" id="2">Genero</option>
+      <div id="showCharacters">
+        <h1>PERSONAJES</h1>
+         
+        <label>Filtrar por Especies:</label>
+        <select name="selector" id="filterSpeciesSelector">
+          <option value="">Seleccione una</option>
+          <option value="Alien">Aliens</option>
+          <option value="Animal">Animal</option>
+          <option value="Cronenberg">Cronenberg</option>
+          <option value="unknown">Desconocido</option>
+          <option value="Disease">Enfermedad</option>
+          <option value="Humanoid">Humanoides</option>
+          <option value="Human">Humanos</option>
+          <option value="Mytholog">Mitológico</option>
+          <option value="Parasite">Parásito</option>
+          <option value="Poopybutthole">Poopybutthole</option>
+          <option value="Robot">Robot</option> 
+          <option value="Vampire">Vampiro</option>
         </select>
 
-      <main>
-        <div id="result">
+        <label>Ordenar por:</label>
+        <select name="selector" id="orderSelector">
+          <option value="">Seleccione una</option>
+          <option value="az">De la A a la Z</option>
+          <option value="za">De la Z a la A</option>
+        </select>
       
-
-      <div id="printResult"></div>       
+        <div id="showData">
+        <div id="printResult"></div>
+        </div>
       </div>
-
     </div>
 
     <script src="./data/rickandmorty/rickandmorty.js"></script>
