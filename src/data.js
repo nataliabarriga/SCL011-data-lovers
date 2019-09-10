@@ -13,6 +13,16 @@ window.filter = {
   }
 }
 
+window.filter = {
+  species: (dataRickAndMorty,condition) =>{
+    const marcia = dataRickAndMorty.filter(element => {
+      return element.species == condition;
+    });
+    return marcia;
+  }
+}
+
+
 
 // // como plantear la condicion, si esta bien la estructura 
 
@@ -23,23 +33,23 @@ sortOrder, indica si se quiere ordenar de manera ascendente o descendente.*/
 // tres parametros - data - sortby - sortOrder
 
 
-let sortBy = dataRickAndMorty.name;
-let sortOrder = document.getElementsByTagName("option").value;/* Tiene que obtener el valor segun lo que diga el usuario, por ejemplo de la a-z=ascendente y de la z-a=descendente */
+// let sortBy = dataRickAndMorty.name;
+// let sortOrder = document.getElementsByTagName("option").value;/* Tiene que obtener el valor segun lo que diga el usuario, por ejemplo de la a-z=ascendente y de la z-a=descendente */
 
 
-/* función que me permite ordenar  */
-const sortData = (dataRickAndMorty, sortBy, sortOrder) =>{ // sortby lo que el usuario elige
-  let newOrder = [""]; // variable vacia donde va el resultado del orden 
-  if (sortOrder == "1"){
-    newOrder = dataRickAndMorty.sort((a,b) => { // .sort es para generar el orden con parametros (a-b) para hacer comparacion
-      return a.sortBy.localCompare(b.sortBy); // a.sortBy orden por nombre del primer parametro y localCompare para comparar dos parametros
-    });
-  } else (sortOrder == "2")
-    newOrder = dataRickAndMorty.sort ((a,b) => {
-      return a.sortBy.localCompare(b.sortBy).reverse();
-    });
-console.log(newOrder);
-};
+// /* función que me permite ordenar  */
+// const sortData = (dataRickAndMorty, sortBy, sortOrder) =>{ // sortby lo que el usuario elige
+//   let newOrder = [""]; // variable vacia donde va el resultado del orden 
+//   if (sortOrder == "1"){
+//     newOrder = dataRickAndMorty.sort((a,b) => { // .sort es para generar el orden con parametros (a-b) para hacer comparacion
+//       return a.sortBy.localCompare(b.sortBy); // a.sortBy orden por nombre del primer parametro y localCompare para comparar dos parametros
+//     });
+//   } else (sortOrder == "2")
+//     newOrder = dataRickAndMorty.sort ((a,b) => {
+//       return a.sortBy.localCompare(b.sortBy).reverse();
+//     });
+// console.log(newOrder);
+// };
 
 
 
