@@ -23,23 +23,6 @@ window.filter = {
 }
 
 window.sort = {
-<<<<<<< HEAD
-  order: (dataRickAndMorty,sortOrder)=>{
-    if (sortOrder == "az"){
-     const sortDataAZ = dataRickAndMorty.sort((a,b)=>{
-        return (a.name < b.name) ? -1:1
-      })
-      return sortDataAZ;
-    } 
-    else {
-      const sortDataZA = dataRickAndMorty.sort((a,b)=>{
-        return (a.name > b.name) ? -1:1
-      })
-      return sortDataZA;
-    }
-  }
-}
-=======
   order: (dataRickAndMorty,sortOrder) =>{
     if (sortOrder=="az"){
       const sortData = dataRickAndMorty.sort((a,b)=>{
@@ -100,4 +83,3 @@ const example = () => {
 
 
 window.example = example; */
->>>>>>> ab6915bb1770d5028ff9e5f664a8463c3f0553d3
