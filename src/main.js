@@ -47,8 +47,13 @@ const finalFilter = filterSpeciesResult.map((showFilter)=>{
 return finalFilter;
 });
 
+<<<<<<< HEAD
 
 /* FUNCION ORDENAR */
+=======
+  
+/* Orden */
+>>>>>>> ab6915bb1770d5028ff9e5f664a8463c3f0553d3
 
 const orderSelector = document.getElementById("orderSelector");
 orderSelector.addEventListener('change', () => {
@@ -67,5 +72,8 @@ const finalOrder = orderResult.map((showOrder)=>{
 });
 return finalOrder;
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> ab6915bb1770d5028ff9e5f664a8463c3f0553d3
 
