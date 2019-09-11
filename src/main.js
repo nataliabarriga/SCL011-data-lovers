@@ -13,58 +13,59 @@ btnCharacters.addEventListener("click", ()=>{
 
 });  
 
+const showData = document.getElementById("showData");
+
 dataRickAndMorty.forEach((show)=>{
-
-  let characterCards = document.createElement("div");
-  characterCards.className = "characterCards"; // para dar estilo en css
-  characterCards.id = "characterCards";
-
-  let father = document.getElementById("showData"); // caja principal
-  father.appendChild (characterCards);
-  characterCards.innerHTML += `<div class ="insideCards">
-                          <img src="${show.image}" alt="imgCharacter">
-                          <h3>${show.name}</h3>
-                          <a href="#insideCards"></a>
-                      </div>`
-
+  document.getElementById("showData").value = " ";
+  showData.innerHTML += 
+      `<div class= "insideCards">
+        <img src="${show.image}" alt="imgCharacter">
+        <h3>${show.name}</h3>
+      </div>`
 });
+
  
 
 /* Función de filtrado */
-
-
 const filterSelector = document.getElementById("filterSpeciesSelector");
 filterSelector.addEventListener('change', () => {
-let condition = filterSelector.options[filterSelector.selectedIndex];
-document.getElementById("showData").innerHTML= "";
+let condition = filterSelector.options[filterSelector.selectedIndex].value;
   
 let filterSpeciesResult = window.filter.species(dataRickAndMorty,condition);
 console.log(filterSpeciesResult);
 
+document.getElementById("showData").innerHTML="";
+const finalFilter = filterSpeciesResult.map((showFilter)=>{
 
-filterSpeciesResult.map((showFilter)=>{
-  let printCharacterCards = document.createElement("div");
-  printCharacterCards.className = "printCharacterCards"; // para dar estilo en css
-  printCharacterCards.id = "printCharacterCards";
-
-  function erase () {
-    document.getElementById("printCharacterCards").innerHTML="";
-   }
-
-
-  let secondFather = document.getElementById("printResult");
-  secondFather.appendChild(printCharacterCards);
-  printCharacterCards.innerHTML += `<div class ="printInsideCards">
-                                      <img src="${showFilter.image}" alt="imgCharacter">
-                                      <h3>${showFilter.name}</h3>
-                                      <a href="#printInsideCards"></a>
-                                    </div>`
-  
-return filterSpeciesResult;
-
-
+  showData.innerHTML += 
+  `<div class ="insideCardsTwo">
+    <img src="${showFilter.image}" alt="imgCharacter">
+    <h3>${showFilter.name}</h3>
+    <a href="#insideCardsTwo"></a>
+  </div>`
 });
-  
+return finalFilter;
+});
+
+
+/* FUNCION ORDENAR */
+
+const orderSelector = document.getElementById("orderSelector");
+orderSelector.addEventListener('change', () => {
+
+  let sortOrder = orderSelector.options[orderSelector.selectedIndex].value;
+  let orderResult = window.sort.order(dataRickAndMorty,sortOrder);
+
+document.getElementById("showData").innerHTML="";
+const finalOrder = orderResult.map((showOrder)=>{
+
+    showData.innerHTML += 
+  `<div class ="insideCardsTwo">
+    <img src="${showOrder.image}" alt="imgCharacter">
+    <h3>${showOrder.name}</h3>
+  </div>`
+});
+return finalOrder;
 });
 
 
