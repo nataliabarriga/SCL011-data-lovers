@@ -23,21 +23,22 @@ window.filter = {
 }
 
 window.sort = {
-  order: (dataRickAndMorty,sortOrder)=>{
-    if (sortOrder == "az"){
-     const sortDataAZ = dataRickAndMorty.sort((a,b)=>{
-        return (a.name < b.name) ? -1:1
+  order: (dataRickAndMorty,sortOrder) =>{
+    if (sortOrder=="az"){
+      const sortData = dataRickAndMorty.sort((a,b)=>{
+        return a.name.localeCompare(b.name);
       })
-      return sortDataAZ;
-    } 
-    else {
-      const sortDataZA = dataRickAndMorty.sort((a,b)=>{
-        return (a.name > b.name) ? -1:1
-      })
-      return sortDataZA;
+      return sortData;
     }
-  }
+    else {
+      const sortDataZ = dataRickAndMorty.sort((a,b)=>{
+        return b.name.localeCompare(a.name);
+      })
+      return sortDataZ;        
+    }
+  } 
 }
+
 
 
 // // como plantear la condicion, si esta bien la estructura 
