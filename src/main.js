@@ -20,6 +20,9 @@ dataRickAndMorty.forEach((show)=>{
       `<div class= "insideCards">
         <img src="${show.image}" alt="imgCharacter">
         <h3>${show.name}</h3>
+        <p>${show.species}</p>
+        <p>${show.status}</p>
+        <p>${show.gender}</p>
       </div>`
 });
 
@@ -36,10 +39,12 @@ document.getElementById("showData").innerHTML="";
 const finalFilter = filterSpeciesResult.map((showFilter)=>{
 
   showData.innerHTML += 
-  `<div class ="insideCardsTwo">
+  `<div class ="insideCards">
     <img src="${showFilter.image}" alt="imgCharacter">
     <h3>${showFilter.name}</h3>
-    <a href="#insideCardsTwo"></a>
+    <p>${showFilter.species}</p>
+    <p>${showFilter.status}</p>
+    <p>${showFilter.gender}</p>
   </div>`
 });
 return finalFilter;
@@ -50,15 +55,19 @@ return finalFilter;
 const orderSelector = document.getElementById("orderSelector");
 orderSelector.addEventListener('change', () => {
 
+  let sortOrder = orderSelector.options[orderSelector.selectedIndex].value;
   let orderResult = window.sort.order(dataRickAndMorty,sortOrder);
 
 document.getElementById("showData").innerHTML="";
 const finalOrder = orderResult.map((showOrder)=>{
 
     showData.innerHTML += 
-  `<div class ="insideCardsTwo">
+  `<div class ="insideCards">
     <img src="${showOrder.image}" alt="imgCharacter">
     <h3>${showOrder.name}</h3>
+    <p>${showOrder.species}</p>
+    <p>${showOrder.status}</p>
+    <p>${showOrder.gender}</p>
   </div>`
 });
 return finalOrder;

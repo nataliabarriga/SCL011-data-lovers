@@ -47,10 +47,12 @@ nav{
 
 h1 {
     margin-top: 100px;
+    margin-bottom: 50px;
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
     letter-spacing: 7.2px;
     font-weight: bolder;
+    color: #1A5E63;
 }
 
 ul {
@@ -63,7 +65,6 @@ ul {
 }
 
 ul li button {
-    color: #454545;
     text-decoration: none;
     display: inline-block;
     padding: 1em;
@@ -73,13 +74,13 @@ ul li button {
 }
 
 ul li button:hover {
-    color: #D000FF;
+    color: #329F5B;
   }
 
 button {
     background-color: #EFEDED;
     border: none;
-    color:#6d6a6a;
+    color:#1A5E63;
     padding: 10px 15px;
     justify-content: center;
     font-size: 16px;
@@ -98,22 +99,30 @@ button {
     margin-top: 50px;
     justify-content: space-around;
 }
- 
-.insideCards, .insideCardsTwo {
-    border: 10px;
-    background-color: aquamarine;
+
+.insideCards {
+    background-color: #EFEDED;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.insideCards h3, .insideCardsTwo h3 {
+.insideCards h3 {
+    color: #113C40;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.insideCards p{
+    color: #1A5E63 ;
     font-size: 14px;
-    font-weight: normal;
     text-align: center;
 }
-
-
 
 @media screen and (max-width:800px) {
 
@@ -124,4 +133,5 @@ button {
 
 .select option {
     font-weight:normal;
+}
 }
