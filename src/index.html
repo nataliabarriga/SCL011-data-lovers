@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="root">
-      <nav class="menu">
+        <nav class="menu">
         <div class="logo">
           <img src="img/logo.png" alt="LogoRick&Morty">
         </div>
@@ -19,41 +19,44 @@
           <li><button id= "curiosidades">Curiosidades</button></li>
           <li><button id= "episodies">Episodios</button></li>
         </ul>
-      </nav>
+        </nav>
+        <div id="index">  
 
-      <div id="showCharacters">
-        <h1>PERSONAJES</h1>
-         
-        <label>Filtrar por Especies:</label>
-        <select name="selector" id="filterSpeciesSelector">
-          <option value="">Seleccione una</option>
-          <option value="Alien">Aliens</option>
-          <option value="Animal">Animal</option>
-          <option value="Cronenberg">Cronenberg</option>
-          <option value="unknown">Desconocido</option>
-          <option value="Disease">Enfermedad</option>
-          <option value="Humanoid">Humanoides</option>
-          <option value="Human">Humanos</option>
-          <option value="Mytholog">Mitológico</option>
-          <option value="Parasite">Parásito</option>
-          <option value="Poopybutthole">Poopybutthole</option>
-          <option value="Robot">Robot</option> 
-          <option value="Vampire">Vampiro</option>
-        </select>
+        </div>
+            <div id="showCharacters">
+              <h1>PERSONAJES</h1>
 
-        <label>Ordenar por:</label>
-        <select name="selector" id="orderSelector">
-          <option value="">Seleccione una</option>
-          <option value="az">De la A a la Z</option>
-          <option value="za">De la Z a la A</option>
-        </select>
+                <label>Filtrar por Especies:</label>
+                  <select name="selector" id="filterSpeciesSelector">
+                    <option value="">Seleccione una</option>
+                    <option value="Alien">Aliens</option>
+                    <option value="Animal">Animal</option>
+                    <option value="Cronenberg">Cronenberg</option>
+                    <option value="unknown">Desconocido</option>
+                    <option value="Disease">Enfermedad</option>
+                    <option value="Humanoid">Humanoides</option>
+                    <option value="Human">Humanos</option>
+                    <option value="Mytholog">Mitológico</option>
+                    <option value="Parasite">Parásito</option>
+                    <option value="Poopybutthole">Poopybutthole</option>
+                    <option value="Robot">Robot</option> 
+                    <option value="Vampire">Vampiro</option>
+                    </select>
+                  <label>Ordenar por:</label>
+                <select name="selector" id="orderSelector">
+                    <option value="">Seleccione una</option>
+                    <option value="az">De la A a la Z</option>
+                    <option value="za">De la Z a la A</option>
+                </select>
+        </div>
+        </div>
+  
+          <div id="showData"></div>
       
-        <div id="showData"></div>
-      </div>
-    </div>
+   
 
-    <script src="./data/rickandmorty/rickandmorty.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+      <script src="./data/rickandmorty/rickandmorty.js"></script>
+      <script src="data.js"></script>
+      <script src="main.js"></script>
   </body>
 </html>
