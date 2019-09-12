@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="root">
-      <nav class="menu">
+        <nav class="menu">
         <div class="logo">
           <img src="img/logo.png" alt="LogoRick&Morty">
         </div>
@@ -19,14 +19,15 @@
           <li><button id= "curiosidades">Curiosidades</button></li>
           <li><button id= "episodies">Episodios</button></li>
         </ul>
-      </nav>
-      <div id="show">
-        <div id="index"></div>
+        </nav>
+        <div id="index">  
+
+        </div>
             <div id="showCharacters">
               <h1>PERSONAJES</h1>
-         
-              <label>Filtrar por Especies:</label>
-                <select name="selector" id="filterSpeciesSelector">
+
+                <label>Filtrar por Especies:</label>
+                  <select name="selector" id="filterSpeciesSelector">
                     <option value="">Seleccione una</option>
                     <option value="Alien">Aliens</option>
                     <option value="Animal">Animal</option>
@@ -40,19 +41,19 @@
                     <option value="Poopybutthole">Poopybutthole</option>
                     <option value="Robot">Robot</option> 
                     <option value="Vampire">Vampiro</option>
-                </select>
-
-              <label>Ordenar por:</label>
+                    </select>
+                  <label>Ordenar por:</label>
                 <select name="selector" id="orderSelector">
                     <option value="">Seleccione una</option>
                     <option value="az">De la A a la Z</option>
                     <option value="za">De la Z a la A</option>
                 </select>
-              </div>
-          </div>
+        </div>
+        </div>
   
           <div id="showData"></div>
-      </div>
+      
+   
 
       <script src="./data/rickandmorty/rickandmorty.js"></script>
       <script src="data.js"></script>

@@ -1,6 +1,5 @@
 /* Declarando la data y haciendola global. */
-const dataRickAndMorty = RICKANDMORTY.results;
-window.dataRickAndMorty= dataRickAndMorty;
+const dataRickAndMorty = window.RICKANDMORTY.results;
 
 /* Mostrar la data */
 const btnCharacters = document.getElementById("characters");
@@ -32,7 +31,6 @@ filterSelector.addEventListener('change', () => {
 let condition = filterSelector.options[filterSelector.selectedIndex].value;
   
 let filterSpeciesResult = window.filter.species(dataRickAndMorty,condition);
-console.log(filterSpeciesResult);
 
 document.getElementById("showData").innerHTML="";
 const finalFilter = filterSpeciesResult.map((showFilter)=>{
@@ -46,6 +44,8 @@ const finalFilter = filterSpeciesResult.map((showFilter)=>{
 });
 return finalFilter;
 });
+
+/* funcion orden */
 
 const orderSelector = document.getElementById("orderSelector");
 orderSelector.addEventListener('change', () => {
@@ -64,5 +64,4 @@ const finalOrder = orderResult.map((showOrder)=>{
 });
 return finalOrder;
 });
-
 
