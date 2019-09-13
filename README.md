@@ -85,22 +85,32 @@ Después de tener listas nuestras historias de usuario, decidimos enfocarnos en 
 Para llegar a un producto final pasamos por varias etapas dentro del proceso de diseño, la primera de ellas es la del prototipado, en donde comenzamos desde entender el flujo de la web, hasta llegar a un prototipo diseñado con una paleta de colores definida, tipografías, estructura y diagramación.
 
 ### Diagrama de flujo
-<a  href="https://imgbb.com"><img  src="https://i.ibb.co/M7661Dh/diagrama-de-flujo-100.jpg"  alt="Segundo Wireframe"></a>
+<a  href="https://imgbb.com"><img  src="https://i.ibb.co/M7661Dh/diagrama-de-flujo-100.jpg"  alt="Diagrama de flujo"></a>
 
 ### Sketch
+<a  href="https://imgbb.com"><img  src="https://i.ibb.co/q7GtkYz/sketch-100.jpg"  alt="Sketch"></a>
 
 ### Wireframe
-<a  href="https://imgbb.com"><img  src="https://i.ibb.co/4SqPvJz/wireframe-100.jpg"  alt="Segundo Wireframe"></a>
+<a  href="https://imgbb.com"><img  src="https://i.ibb.co/4SqPvJz/wireframe-100.jpg"  alt="Wireframe"></a>
 
 ### Prototipo de alta fidelidad
-<a  href="https://imgbb.com"><img  src="https://i.ibb.co/R3yx89z/alta-100.jpg"  alt="Segundo Wireframe"></a>
+<a  href="https://imgbb.com"><img  src="https://i.ibb.co/R3yx89z/alta-100.jpg"  alt="Prototipo de alta fidelidad"></a>
 
 #### Paleta de colores
+Decidimos utilizar una paleta de colores acotada y más bien sobria, ya que los personajes de la serie tienen mucha personalidad y buscamos resaltar eso, ayudando al usuario a centrarse en lo importante de la información que se le está entregando sin tener distractores.
+Utilizamos un morado y un verde que combinan y contrastan de manera llamativa sobre un fondo ocre.
+
+<a  href="https://imgbb.com"><img  src="https://i.ibb.co/Y2fzMfL/paleta-100.jpg"  alt="Paleta de colores"></a>
+
 
 #### Tipografía
+Utilizamos la tipografía Nunito Sans, ya que es una tipografía que tiene muy buena legibilidad en la web. Además cuenta con varios pesos tipográficos lo que nos permite darle jerarquía y personalidad a la web sin tener que variar de familia tipográfica.
+
+<a  href="https://imgbb.com"><img  src="https://i.ibb.co/85QBYps/T01.png"  alt="Familia Tipografia"></a>
+<a  href="https://imgbb.com"><img  src="https://i.ibb.co/RGXrwGS/T02.png"  alt="Estio tipografia"></a>
 
 ### Link del proyecto
-Puedes visitar nuestra web aquí:  [Data Lovers](https://khan.github.io/KaTeX/)
+Puedes visitar nuestra web aquí:  [Data Lovers Rick & Morty](https://khan.github.io/KaTeX/)
 
 ## Test de usabilidad
 
@@ -110,10 +120,12 @@ Puedes visitar nuestra web aquí:  [Data Lovers](https://khan.github.io/KaTeX/)
 # Pruebas unitarias
 <a  href="https://imgbb.com"><img  src="https://i.ibb.co/yhxPG43/test01.png"  alt="Segundo Wireframe"></a>
 
-<a  href="https://imgbb.com"><img  src="https://i.ibb.co/nsBLT4y/test02.png
-"  alt="Segundo Wireframe"></a>
+<a  href="https://imgbb.com"><img  src="https://i.ibb.co/nsBLT4y/test02.png"  alt="Segundo Wireframe"></a>
 
 # Retroalimentación 
+Durante el proceso de desarrollo de la web, tuvimos que ir modificando el diseño de la página, ya sea por limitaciones de conocimiento respecto al código o por los testeos que ibamos haciendo a los usuarios.
+La versión final dista mucho de los primeros sketch pero entendemos que diseñar una web es un proceso de reiteración constante y si bien nos hubiera gustado tener algunos resultados más acabados, estamos contentas con el resultado hasta ahora, ya que nuestra web cumple con 3 de las 4 historias de usuario.
+Creemos también que si nos hubiéramos organizado mejor, podríamos haber avanzado más y completar las 4 historias de usuario y afinar mejor algunos detalles del diseño.
 
 
 # Desarrolladoras
