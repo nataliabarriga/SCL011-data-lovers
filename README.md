@@ -110,7 +110,9 @@ Utilizamos la tipografía Nunito Sans, ya que es una tipografía que tiene muy b
 <a  href="https://imgbb.com"><img  src="https://i.ibb.co/RGXrwGS/T02.png"  alt="Estio tipografia"></a>
 
 ### Link del proyecto
-Puedes visitar nuestra web aquí:  [Data Lovers Rick & Morty](https://khan.github.io/KaTeX/)
+Puedes visitar nuestra web aquí:  [Data Lovers Rick & Morty](https://camilamaira.github.io/SCL011-data-lovers/src/index.html)
+
+
 
 ## Test de usabilidad
 
