@@ -73,3 +73,50 @@ const finalOrder = orderResult.map((showOrder)=>{
 return finalOrder;
 });
 
+/* Mostrar Curiosidades */
+const btnCuriosities = document.getElementById("curiosities");
+btnCuriosities.addEventListener("click", ()=>{
+
+  const show= document.getElementById("showCuriosities");
+  show.style.display = "block";
+  const hidden = document.getElementById("showCharacters");
+  hidden.style.display = "none";
+});  
+
+/* Cálculo */
+
+const showCalculation = document.getElementById("showCalculation");
+
+const aliveCalculation = window.calculation.computeStatsAlive(dataRickAndMorty);
+const femaleCalculation = window.calculation.computeStatsFemale(dataRickAndMorty);
+const humanoidCalculation = window.calculation.computeStatsHumanoid(dataRickAndMorty);
+
+const btnCuriosities1 = document.getElementById("curiosities1");
+btnCuriosities1.addEventListener("click", (calculation) =>{
+  
+  showCalculation.innerHTML = 
+  `<div class="percentBox">
+  <h2>El ${aliveCalculation}% de los personajes están vivos</h2>
+  </div>
+  `;
+})
+
+const btnCuriosities2 = document.getElementById("curiosities2");
+btnCuriosities2.addEventListener("click", (calculation) =>{
+  
+  showCalculation.innerHTML = 
+  `<div class="percentBox">
+  <h2>El ${femaleCalculation}% de los personajes son mujeres</h2>
+  </div>
+  `;
+})
+
+const btnCuriosities3 = document.getElementById("curiosities3");
+btnCuriosities3.addEventListener("click", (calculation) =>{
+  
+  showCalculation.innerHTML = 
+  `<div class="percentBox">
+  <h2>El ${humanoidCalculation}% de los personajes son humanoides</h2>
+  </div>
+  `;
+})
