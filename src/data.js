@@ -61,3 +61,15 @@ window.calculation = {
   },
 }
 
+
+window.episodes = {
+  episode: (dataRickAndMortyEpisodes,conditionE) =>{
+    const episodesResult = dataRickAndMortyEpisodes.filter((elementE) => {
+      return (elementE.episode === conditionE);
+    });
+    console.log(episodesResult);
+    return episodesResult;
+    
+  }
+}
+

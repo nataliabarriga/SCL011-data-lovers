@@ -9,6 +9,8 @@ btnCharacters.addEventListener("click", ()=>{
   showCharacters.style.display = "block";
   const hiddenIndex = document.getElementById("index");
   hiddenIndex.style.display = "none";
+  const hiddenCuriosities=document.getElementById("showCuriosities");
+  hiddenCuriosities.style.display ="none"
 
 });  
 
@@ -26,7 +28,6 @@ dataRickAndMorty.forEach((show)=>{
       </div>`
 });
 
- 
 
 /* Función de filtrado */
 const filterSelector = document.getElementById("filterSpeciesSelector");
@@ -120,3 +121,67 @@ btnCuriosities3.addEventListener("click", (calculation) =>{
   </div>
   `;
 })
+
+/* mostrar episodios */
+
+const dataRickAndMortyEpisode = window.RICKANDMORTY.episode;
+
+const btnEpisodes = document.getElementById("episodes");
+btnEpisodes.addEventListener("click", ()=>{
+
+  const showEpisodesResult = document.getElementById("showEpisodes");
+  showEpisodesResult.style.display = "block";
+
+  const hiddenIndexEpisodes = document.getElementById("showCuriosities");
+  hiddenIndexEpisodes.style.display = "none";
+
+  const hidden = document.getElementById("showCharacters");
+  hidden.style.display = "none";
+
+});  
+
+
+const seasonSelector = document.getElementById("season");
+seasonSelector.addEventListener('change', () => {
+let conditionE = seasonSelector.options[seasonSelector.selectedIndex].value;
+
+
+ let episodesResult = window.episodes.episode(dataRickAndMortyEpisode,conditionE);
+
+
+const showDataEpisodes = document.getElementById("showDataEpisodes");
+
+episodesResult.forEach((showEpisode) => {
+  document.getElementById("showDataEpisodes").value = " ";
+  showDataEpisodes.innerHTML += 
+  `<div class ="insideCards">
+    <img src="${showEpisode.image}" alt="imgCharacter">
+    <h3>${showEpisode.id}</h3>
+    <p>${showEpisode.episode}</p>
+  </div>`
+
+
+
+});
+
+});
+
+
+
+/*document.getElementById("showDataEpisodes").innerHTML=" ";
+const EpisodesFinal = episodesResult.map((showEpisode)=>{
+
+  showDataEpisode.innerHTML += 
+  `<div class ="insideCards">
+    <img src="${showEpisodie.image}" alt="imgCharacter">
+    <h3>${showEpisode.id}</h3>
+    <p>${showEpisode.episode}</p>
+  </div>`
+
+  console.log(episodesResult)
+});
+
+return EpisodesFinal;
+
+});
+*/
