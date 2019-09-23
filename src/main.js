@@ -9,6 +9,8 @@ btnCharacters.addEventListener("click", ()=>{
   showCharacters.style.display = "block";
   const hiddenIndex = document.getElementById("index");
   hiddenIndex.style.display = "none";
+  const hiddenCuriosities=document.getElementById("showCuriosities");
+  hiddenCuriosities.style.display ="none"
 
 });  
 
@@ -26,7 +28,6 @@ dataRickAndMorty.forEach((show)=>{
       </div>`
 });
 
- 
 
 /* Función de filtrado */
 const filterSelector = document.getElementById("filterSpeciesSelector");
