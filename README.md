@@ -75,6 +75,14 @@ Creamos 4 historias de usuario, siguiendo las especificaciones del proyecto y  s
 -  **Historia de usuario 4:** Yo como fan de Rick & Morty quiero acceder a información exclusiva de la serie para sentirme parte del universo Rick & Morty.
 > Calcular con la información de la data.
 
+En el video a continuación se muestra el primer testeo de nuestro prototipo de alta fidelidad con usuario **"Fan":** que corresponde a las historias de usuario 1 y 2.
+
+En su feedback menciona la idea de enfocarnos en los personajes ya que Rick and Morty **trata principalmente de multiversos**  por lo tanto, al enfocarnos en la muestra de personajes en sus multiples universos podemos llegar con mayor facilidad a todos los usuarios de la página web y lo que posiblemente esten buscando al visitar sitios web como este. Por otro lado comenta que el filtrado por género, vivos y muertos es innecesario, ya que nuevamente al tratarse de multiversos no se tiene precisión en la data a que universo corresponde, a su vez menciona la posibilidad de mostrar los diferentes Ricks y Mortys de los diversos multiversos en especie de filtrado solo de Ricks y/o de Mortys respectivamente. 
+
+Respecto al diseño visual piensa que seria interesante "apropiarse de la visualidad de la serie", con tipografías que hagan mayor alución al universo Rick and Morty colores más contrastados, etc. Finalmente comenta "... dejar en limpio lo que te cuenta la serie, porque lo entiendes pero no lo procesas porque es mucho... yo que he visto dos veces la serie", con ese comentario hace referencia a incluir fichas de personajes con detalles precisos de cada uno de ellos, en que universos habitan, crear una especie de red social con links de capitulos online, comentarios de usuarios, puntuación de episodios, etc.  
+
+<a href="https://drive.google.com/file/d/1YxllZHR89eV5QXIAxX0B_LlmDzsnAuGV/view?usp=sharing"></a>
+
 
 ## Definición del producto
 
