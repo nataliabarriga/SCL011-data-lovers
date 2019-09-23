@@ -90,7 +90,7 @@ btnCuriosities.addEventListener("click", ()=>{
 
   const hiddenCharacters = document.getElementById("showCharacters");
   hiddenCharacters.style.display = "none";
-
+  
   const hiddenEpisodes = document.getElementById("showEpisodes");
   hiddenEpisodes.style.display = "none";
 });  
