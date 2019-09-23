@@ -85,9 +85,12 @@ btnCuriosities.addEventListener("click", ()=>{
   const showCuriosities = document.getElementById("showCuriosities");
   showCuriosities.style.display = "block";
 
+  const hiddenIndex = document.getElementById("index");
+  hiddenIndex.style.display = "none";
+
   const hiddenCharacters = document.getElementById("showCharacters");
   hiddenCharacters.style.display = "none";
-
+  
   const hiddenEpisodes = document.getElementById("showEpisodes");
   hiddenEpisodes.style.display = "none";
 });  
