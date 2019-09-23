@@ -10,14 +10,12 @@ btnCharacters.addEventListener("click", ()=>{
 
   const hiddenIndex = document.getElementById("index");
   hiddenIndex.style.display = "none";
+
   const hiddenCuriosities=document.getElementById("showCuriosities");
   hiddenCuriosities.style.display ="none"
 
   const hiddenEpisodes = document.getElementById("showEpisodes");
   hiddenEpisodes.style.display = "none";
-
-
-
 });  
 
 const showData = document.getElementById("showData");
@@ -84,15 +82,17 @@ return finalOrder;
 const btnCuriosities = document.getElementById("curiosities");
 btnCuriosities.addEventListener("click", ()=>{
 
-  const show= document.getElementById("showCuriosities");
-  show.style.display = "block";
+  const showCuriosities = document.getElementById("showCuriosities");
+  showCuriosities.style.display = "block";
 
-  const hidden = document.getElementById("showCharacters");
-  hidden.style.display = "none";
+  const hiddenIndex = document.getElementById("index");
+  hiddenIndex.style.display = "none";
+
+  const hiddenCharacters = document.getElementById("showCharacters");
+  hiddenCharacters.style.display = "none";
 
   const hiddenEpisodes = document.getElementById("showEpisodes");
   hiddenEpisodes.style.display = "none";
-
 });  
 
 /* Cálculo */
@@ -143,11 +143,11 @@ btnEpisodes.addEventListener("click", ()=>{
   const showEpisodesResult = document.getElementById("showEpisodes");
   showEpisodesResult.style.display = "block";
 
-  const hiddenIndexEpisodes = document.getElementById("showCuriosities");
-  hiddenIndexEpisodes.style.display = "none";
+  const hiddenCuriosities = document.getElementById("showCuriosities");
+  hiddenCuriosities.style.display = "none";
 
-  const hidden = document.getElementById("showCharacters");
-  hidden.style.display = "none";
+  const hiddenCharacters = document.getElementById("showCharacters");
+  hiddenCharacters.style.display = "none";
 
 });  
 
