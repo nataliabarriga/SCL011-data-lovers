@@ -12,7 +12,7 @@ En primer lugar para definir un usuario, realizamos una encuesta (Google Forms) 
 
 Dentro de la encuesta hicimos preguntas cerradas y abiertas en donde le dimos a los usuarios el chance de explayarse contándonos que es lo que prefieren ver dentro de una página web de Rick & Morty.
 
-<a href="https://ibb.co/qMhBykz"><img src="https://i.ibb.co/5WCTMBd/encuesta-rickmorty.png" alt="encuesta-rickmorty"></a>
+[Entrevista Usuario](https://drive.google.com/file/d/1YxllZHR89eV5QXIAxX0B_LlmDzsnAuGV/view?usp=sharing)
 
 Como pregunta abierta, nos preguntamos por qué Rick And Morty llamaba la **atención de los usuarios**.  
 Las respuestas nos lleva al análisis de que los usuarios se sienten atraídos por tres motivos.
