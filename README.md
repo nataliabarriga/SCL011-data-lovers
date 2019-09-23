@@ -12,7 +12,6 @@ En primer lugar para definir un usuario, realizamos una encuesta (Google Forms) 
 
 Dentro de la encuesta hicimos preguntas cerradas y abiertas en donde le dimos a los usuarios el chance de explayarse contándonos que es lo que prefieren ver dentro de una página web de Rick & Morty.
 
-[Entrevista Usuario](https://drive.google.com/file/d/1YxllZHR89eV5QXIAxX0B_LlmDzsnAuGV/view?usp=sharing)
 
 Como pregunta abierta, nos preguntamos por qué Rick And Morty llamaba la **atención de los usuarios**.  
 Las respuestas nos lleva al análisis de que los usuarios se sienten atraídos por tres motivos.
@@ -81,7 +80,7 @@ En su feedback menciona la idea de enfocarnos en los personajes ya que Rick and 
 
 Respecto al diseño visual piensa que seria interesante "apropiarse de la visualidad de la serie", con tipografías que hagan mayor alución al universo Rick and Morty colores más contrastados, etc. Finalmente comenta "... dejar en limpio lo que te cuenta la serie, porque lo entiendes pero no lo procesas porque es mucho... yo que he visto dos veces la serie", con ese comentario hace referencia a incluir fichas de personajes con detalles precisos de cada uno de ellos, en que universos habitan, crear una especie de red social con links de capitulos online, comentarios de usuarios, puntuación de episodios, etc.  
 
-<a href="https://drive.google.com/file/d/1YxllZHR89eV5QXIAxX0B_LlmDzsnAuGV/view?usp=sharing"></a>
+[Entrevista Usuario](https://drive.google.com/file/d/1YxllZHR89eV5QXIAxX0B_LlmDzsnAuGV/view?usp=sharing)
 
 
 ## Definición del producto
