@@ -11,17 +11,16 @@ body {
     background: #EFEDED;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
-    background-image: url(img/fondo4.png);
-    background-repeat: no-repeat;
  
 }
 
-#index, #showCharacters {
+#showCharacters, #showCuriosities, #showEpisodes {
     display: none;
     width: 90%;
     margin: 0px 5% 0px 5%;
     background: #EFEDED;
 }
+
 
 nav{
     width: 100%;
@@ -95,28 +94,32 @@ h1 {
     flex-direction: row;
 }
 
-#showData {
+#showData, #showCalculation, #showDataEpisodes {
     display:flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap; 
     margin-top: 50px;
-    min-height: 700px;
 }
 
 label{
-    color: #329F5B;
+    color: #3D348B;
+    font-weight: bold;
 }
 
 select {
-    border: none;
-    font-size: 13px;
+    overflow: hidden;
+    border:none;
+    box-shadow: none;
+    background-color:transparent;
+    background-image: none;
+    appearance: none;
+    font-size: 15px;
     height: 30px;
-    padding: 5px;
-    width: 155px;
-    flex-wrap: wrap;
-    margin-top: 3px;
+    padding: 5px 8px;
+    width: 25%;
+    margin-top: 10px;
     color: #3D348B;
 }
 
@@ -124,8 +127,7 @@ select {
     font-weight:normal;
 }
 
-
-.insideCards {
+.insideCards, .percentBox {
     background-color: #EFEDED;
     margin: 20px;
     border-radius: 30px;
@@ -133,6 +135,10 @@ select {
     padding: 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 } 
+
+.percentBox{
+    background-color: #329F5B;
+}
 
 .insideCards h3 {
     color: #329F5B;
@@ -149,11 +155,23 @@ select {
     text-align: center;
 }
 
-/*desktop*/
-@media screen 
-and (min-width: 1200px)
-and (max-width: 1600px)
-and (-webkit-min-device-pixel-ratio: 1){
+#curiosities1, #curiosities2, #curiosities3 {
+    width:30%;
+    background-color: #3D348B;
+    border-radius: 20px;
+    color: white;
+}
+
+#curiosities1:hover, #curiosities2:hover, #curiosities3:hover {
+    background-color: #329F5B;
+}
+
+.percentBox h2{
+    color: #EFEDED;
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
 
 }
 

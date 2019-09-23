@@ -16,16 +16,21 @@
         </div>
         <ul>
           <li><button id="characters">Personajes</button></li>
-          <li><button id= "curiosidades">Curiosidades</button></li>
-          <li><button id= "episodies">Episodios</button></li>
+          <li><button id= "curiosities">Curiosidades</button></li>
+          <li><button id= "episodes">Episodios</button></li>
         </ul>
         </nav>
         <div id="index">
+          <h1>Guía Rick & Morty</h1>
+          <div class="center">
+            <p>Bienvenidos a la Web Guía de Rick & Morty</p>
+            <img src="img/fondo3.png">
+          </div>
         </div>
 
-          <div id="showCharacters">
-            <h1>PERSONAJES</h1>
-            <div class="center">
+        <div id="showCharacters">
+          <h1>PERSONAJES</h1>
+          <div class="center">
             <label>Filtrar por Especies:</label>
               <select name="selector" id="filterSpeciesSelector">
                 <option value="">Seleccione una</option>
@@ -48,12 +53,40 @@
                 <option value="az">De la A a la Z</option>
                 <option value="za">De la Z a la A</option>
               </select>
-            </div>
-            
-            <div id="showData"></div>
-            
           </div>
-      </div>
+          <div id="showData"></div>
+        </div>
+
+        <div id="showCuriosities">
+          <h1>Curiosidades</h1>
+          <div class="center">
+            <button id="curiosities1">Curiosidad 1</button>
+            <button id="curiosities2">Curiosidad 2</button>
+            <button id="curiosities3">Curiosidad 3</button>
+          </div>  
+            <div id="showCalculation"></div>
+          
+        </div>
+      
+
+      <div id="showEpisodes">
+        <h1>EPISODIOS</h1>
+          <div class="center">
+            <select id="season">
+              <option value="">Selecciona una temporada</option>
+              <option value="seasonOne">Temporada 1</option>
+              <option value="seasonTwo">Temporada 2</option>
+            </select>
+          </div>
+      </div>    
+      
+
+      <div id="showDataEpisodes"></div>
+
+
+    </div>
+
+
 
       <script src="./data/rickandmorty/rickandmorty.js"></script>
       <script src="data.js"></script>

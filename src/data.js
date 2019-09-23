@@ -25,3 +25,51 @@ window.sort = {
     }
   } 
 }
+
+window.calculation = {
+  Alive: (dataRickAndMorty) =>{
+    const alive = dataRickAndMorty.filter(element =>{
+      return element.status == "Alive";
+    });
+    return alive;
+  },
+
+  Female:(dataRickAndMorty) =>{
+    const female= dataRickAndMorty.filter(element => {
+      return element.gender == "Female";
+    });
+    return female;
+  },
+
+  Humanoid: (dataRickAndMorty)=>{
+    const humanoid = dataRickAndMorty.filter (element =>{
+      return element.species == "Humanoid";
+    });
+    return humanoid;
+  },
+  computeStatsAlive: (dataRickAndMorty) => {
+    const percentStatus = (window.calculation.Alive(dataRickAndMorty).length * 100 /  dataRickAndMorty.length).toFixed(0);
+    return percentStatus;
+  },
+  computeStatsFemale: (dataRickAndMorty) => {
+    const percentStatus = (window.calculation.Female(dataRickAndMorty).length * 100 /  dataRickAndMorty.length).toFixed(0);
+    return percentStatus;
+  },
+  computeStatsHumanoid: (dataRickAndMorty) => {
+    const percentStatus = (window.calculation.Humanoid(dataRickAndMorty).length * 100 /  dataRickAndMorty.length).toFixed(0);
+    return percentStatus;
+  },
+}
+
+
+window.episodes = {
+  episode: (dataRickAndMortyEpisodes,conditionE) =>{
+    const episodesResult = dataRickAndMortyEpisodes.filter((elementE) => {
+      return (elementE.episode === conditionE);
+    });
+    console.log(episodesResult);
+    return episodesResult;
+    
+  }
+}
+

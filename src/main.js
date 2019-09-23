@@ -73,3 +73,114 @@ const finalOrder = orderResult.map((showOrder)=>{
 return finalOrder;
 });
 
+/* Mostrar Curiosidades */
+const btnCuriosities = document.getElementById("curiosities");
+btnCuriosities.addEventListener("click", ()=>{
+
+  const show= document.getElementById("showCuriosities");
+  show.style.display = "block";
+  const hidden = document.getElementById("showCharacters");
+  hidden.style.display = "none";
+});  
+
+/* Cálculo */
+
+const showCalculation = document.getElementById("showCalculation");
+
+const aliveCalculation = window.calculation.computeStatsAlive(dataRickAndMorty);
+const femaleCalculation = window.calculation.computeStatsFemale(dataRickAndMorty);
+const humanoidCalculation = window.calculation.computeStatsHumanoid(dataRickAndMorty);
+
+const btnCuriosities1 = document.getElementById("curiosities1");
+btnCuriosities1.addEventListener("click", (calculation) =>{
+  
+  showCalculation.innerHTML = 
+  `<div class="percentBox">
+  <h2>El ${aliveCalculation}% de los personajes están vivos</h2>
+  </div>
+  `;
+})
+
+const btnCuriosities2 = document.getElementById("curiosities2");
+btnCuriosities2.addEventListener("click", (calculation) =>{
+  
+  showCalculation.innerHTML = 
+  `<div class="percentBox">
+  <h2>El ${femaleCalculation}% de los personajes son mujeres</h2>
+  </div>
+  `;
+})
+
+const btnCuriosities3 = document.getElementById("curiosities3");
+btnCuriosities3.addEventListener("click", (calculation) =>{
+  
+  showCalculation.innerHTML = 
+  `<div class="percentBox">
+  <h2>El ${humanoidCalculation}% de los personajes son humanoides</h2>
+  </div>
+  `;
+})
+
+/* mostrar episodios */
+
+const dataRickAndMortyEpisode = window.RICKANDMORTY.episode;
+
+const btnEpisodes = document.getElementById("episodes");
+btnEpisodes.addEventListener("click", ()=>{
+
+  const showEpisodesResult = document.getElementById("showEpisodes");
+  showEpisodesResult.style.display = "block";
+
+  const hiddenIndexEpisodes = document.getElementById("showCuriosities");
+  hiddenIndexEpisodes.style.display = "none";
+
+  const hidden = document.getElementById("showCharacters");
+  hidden.style.display = "none";
+
+});  
+
+
+const seasonSelector = document.getElementById("season");
+seasonSelector.addEventListener('change', () => {
+let conditionE = seasonSelector.options[seasonSelector.selectedIndex].value;
+
+
+ let episodesResult = window.episodes.episode(dataRickAndMortyEpisode,conditionE);
+
+
+const showDataEpisodes = document.getElementById("showDataEpisodes");
+
+episodesResult.forEach((showEpisode) => {
+  document.getElementById("showDataEpisodes").value = " ";
+  showDataEpisodes.innerHTML += 
+  `<div class ="insideCards">
+    <img src="${showEpisode.image}" alt="imgCharacter">
+    <h3>${showEpisode.id}</h3>
+    <p>${showEpisode.episode}</p>
+  </div>`
+
+
+
+});
+
+});
+
+
+
+/*document.getElementById("showDataEpisodes").innerHTML=" ";
+const EpisodesFinal = episodesResult.map((showEpisode)=>{
+
+  showDataEpisode.innerHTML += 
+  `<div class ="insideCards">
+    <img src="${showEpisodie.image}" alt="imgCharacter">
+    <h3>${showEpisode.id}</h3>
+    <p>${showEpisode.episode}</p>
+  </div>`
+
+  console.log(episodesResult)
+});
+
+return EpisodesFinal;
+
+});
+*/
