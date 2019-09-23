@@ -151,48 +151,28 @@ btnEpisodes.addEventListener("click", ()=>{
 
 });  
 
+/* episodios */
+
 
 const seasonSelector = document.getElementById("season");
 seasonSelector.addEventListener('change', () => {
 let conditionE = seasonSelector.options[seasonSelector.selectedIndex].value;
 
+let episodesResult = window.episodes.episode(dataRickAndMorty,conditionE);
 
- let episodesResult = window.episodes.episode(dataRickAndMortyEpisode,conditionE);
 
-
-const showDataEpisodes = document.getElementById("showDataEpisodes");
-
-episodesResult.forEach((showEpisode) => {
-  document.getElementById("showDataEpisodes").value = " ";
+document.getElementById("showDataEpisodes").innerHTML="";
+const finalEpisode = episodesResult.map((showDataEpisodes)=>{
   showDataEpisodes.innerHTML += 
   `<div class ="insideCards">
-    <img src="${showEpisode.image}" alt="imgCharacter">
-    <h3>${showEpisode.id}</h3>
-    <p>${showEpisode.episode}</p>
+    <h3>${showDataEpisodes.id}</h3>
+    <p>${showDataEpisodes.name}</p>
+    <p>${showDataEpisodes.episode}</p>
   </div>`
 
-
-
 });
 
+return finalEpisode;
+
+ 
 });
-
-
-
-/*document.getElementById("showDataEpisodes").innerHTML=" ";
-const EpisodesFinal = episodesResult.map((showEpisode)=>{
-
-  showDataEpisode.innerHTML += 
-  `<div class ="insideCards">
-    <img src="${showEpisodie.image}" alt="imgCharacter">
-    <h3>${showEpisode.id}</h3>
-    <p>${showEpisode.episode}</p>
-  </div>`
-
-  console.log(episodesResult)
-});
-
-return EpisodesFinal;
-
-});
-*/
