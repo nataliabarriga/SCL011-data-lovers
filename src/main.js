@@ -133,7 +133,8 @@ btnCuriosities3.addEventListener("click", (calculation) =>{
   `;
 })
 
-/* mostrar episodios */
+
+/* mostrar episodios 
 
 const dataRickAndMortyEpisode = window.RICKANDMORTY.episode;
 
@@ -151,7 +152,7 @@ btnEpisodes.addEventListener("click", ()=>{
 
 });  
 
-/* episodios */
+episodios 
 
 
 const seasonSelector = document.getElementById("season");
@@ -175,4 +176,6 @@ const finalEpisode = episodesResult.map((showDataEpisodes)=>{
 return finalEpisode;
 
  
-});
+}); 
+
+*/
