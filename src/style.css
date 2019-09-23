@@ -2,7 +2,6 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    
 }
 
 body {
@@ -11,7 +10,6 @@ body {
     background: #EFEDED;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
- 
 }
 
 #showCharacters, #showCuriosities, #showEpisodes {
@@ -20,7 +18,6 @@ body {
     margin: 0px 5% 0px 5%;
     background: #EFEDED;
 }
-
 
 nav{
     width: 100%;
