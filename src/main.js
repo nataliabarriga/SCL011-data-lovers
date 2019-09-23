@@ -7,8 +7,14 @@ btnCharacters.addEventListener("click", ()=>{
 
   const showCharacters = document.getElementById("showCharacters");
   showCharacters.style.display = "block";
+
   const hiddenIndex = document.getElementById("index");
   hiddenIndex.style.display = "none";
+
+  const hiddenEpisodes = document.getElementById("showEpisodes");
+  hiddenEpisodes.style.display = "none";
+
+
 
 });  
 
@@ -79,8 +85,13 @@ btnCuriosities.addEventListener("click", ()=>{
 
   const show= document.getElementById("showCuriosities");
   show.style.display = "block";
+
   const hidden = document.getElementById("showCharacters");
   hidden.style.display = "none";
+
+  const hiddenEpisodes = document.getElementById("showEpisodes");
+  hiddenEpisodes.style.display = "none";
+
 });  
 
 /* Cálculo */
