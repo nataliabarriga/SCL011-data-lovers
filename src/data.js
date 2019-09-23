@@ -69,7 +69,6 @@ window.episodes = {
     });
     console.log(episodesResult);
     return episodesResult;
-    
   }
 }
 
