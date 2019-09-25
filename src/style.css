@@ -216,16 +216,16 @@ select {
     }
 
     #characters{
-        border-top: 2px solid black;
+        border-top: 2px solid rgba(165, 156, 156, 0.411);
     }
 
     #curiosities{
-        border-bottom: 2px solid black;
-        border-top: 2px solid black;
+        border-bottom: 2px solid rgba(165, 156, 156, 0.411);
+        border-top: 2px solid rgba(165, 156, 156, 0.411);
     }
 
     #episodes{
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid rgba(165, 156, 156, 0.411);
     }
 
     #index{
