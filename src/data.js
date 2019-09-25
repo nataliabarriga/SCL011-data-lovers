@@ -62,13 +62,22 @@ window.calculation = {
 }
 
 
-window.episodes = {
-  episode: (dataRickAndMortyEpisodes,conditionE) =>{
-    const episodesResult = dataRickAndMortyEpisodes.filter((elementE) => {
-      return (elementE.episode === conditionE);
-    });
-    console.log(episodesResult);
-    return episodesResult;
+  window.episodes = {
+    episode: (dataRickAndMorty, conditionE) => {
+      let filteredEpisodes = [];
+      for (let i=0; i < dataRickAndMorty.length; i++) {
+        for (let j=0; j < dataRickAndMorty[i].episode.length; j++) {
+          if (dataRickAndMorty[i].episode[j] == conditionE) {
+
+            filteredEpisodes.push(dataRickAndMorty[i]);
+          }
+        }
+      }
+      console.log(filteredEpisodes)
+    return filteredEpisodes;
+    
+
+    }
+    
   }
-}
 
