@@ -1,93 +1,102 @@
-* {
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
+body {
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #EDF5E1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
-body {
+nav{
     width: 100%;
-    max-width: 1440px;
-    background: #EFEDED;
+    background:#EDF5E1;
+    height: auto;
+    top: 0px;
+    display: flex;
+    position: fixed;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    height: 70px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: #EDF5E1;
+    color:#020202;
+    border: none;
     font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
     font-size: 16px;
+}
+
+ul li button:hover {
+    color: #058C42;
 }
 
 #showCharacters, #showCuriosities, #showEpisodes {
     display: none;
     width: 90%;
     margin: 0px 5% 0px 5%;
-    background: #EFEDED;
-}
+    background: #EDF5E1;
+}  
 
-nav{
-    width: 100%;
-    background: #EFEDED;
-    height: 80px;
-    top: 0px;
+.center{
+    width: 70%;
+    margin: 0px 15% 50px 15%;
     display: flex;
-    position: fixed;
-    flex-direction:row;
-    justify-content: space-between;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
 }
 
-.menu .logo {
-      display:inline-block;
+.center p{
+    text-align: center;
+    color: #020202;
+}
+
+label{
+    color: #020202;
+}
+
+.select {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 25%;
+    margin: 0 45px 0 10px;
+    overflow: hidden;
+    background-color: #fff;
   }
   
-.menu .logo img {
-      vertical-align: top;
-      height: 70px;
-}
-
-ul {
-    margin-top: 15px;
-    margin-right: 40px;
-    justify-content: space-between;
-    list-style-type: none;
-    display: flex;
-    
-}
-
-ul li button {
-    text-decoration: none;
-    display: inline-block;
-    padding: 1em;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1em;
-    font-weight: bolder;
-}
-
-ul li button:hover {
-    color: #329F5B;
-  }
-
-button {
-    background-color: #EFEDED;
+.select select {
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
     border: none;
-    color:#3D348B;
-    padding: 10px 15px;
-    justify-content: center;
-    font-size: 16px;
-    margin: 15px 10px;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
 }
 
 h1 {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: 100px 0 50px 0;
+    color:  #058C42;
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
-    letter-spacing: 7.2px;
     font-weight: bolder;
-    color:  #3D348B;
-}
-
-.center{
-    width: 50%;
-    margin: 0px 25% 0px 25%;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    flex-direction: row;
 }
 
 #showData, #showCalculation, #showDataEpisodes {
@@ -95,76 +104,96 @@ h1 {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap; 
-    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
-label{
-    color: #3D348B;
-    font-weight: bold;
-}
-
-select {
-    overflow: hidden;
-    border:none;
-    box-shadow: none;
-    background-color:white;
-    background-image: none;
-    appearance: none;
-    font-size: 15px;
-    height: 30px;
-    padding: 5px 8px;
-    width: 25%;
-    margin-top: 10px;
-    color: #3D348B;
-}
-
-.insideCards, .percentBox {
-    background-color: #EFEDED;
-    margin: 20px;
+.insideCards {
+    width: 15%;
+    height: 300px;
+    margin: 0 0 10px 10px;
+    padding: 30px 20px 0 20px;
+    background-color: #0D2818;
     border-radius: 30px;
     cursor: pointer;
-    padding: 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 } 
 
-.percentBox{
-    background-color: #329F5B;
-}
-
 .insideCards h3 {
-    color: #329F5B;
-    font-size: 18px;
+    color: #32A064;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin-top:20px;
-    margin-bottom: 10px;
+    margin: 20px 0 0 0;
 }
 
 .insideCards p{
-    color: #3D348B ;
+    color: #EDF5E1 ;
     font-size: 14px;
     text-align: center;
 }
 
-#curiosities1, #curiosities2, #curiosities3 {
-    width:30%;
-    background-color: #3D348B;
-    border-radius: 20px;
-    color: white;
-}
-
-#curiosities1:hover, #curiosities2:hover, #curiosities3:hover {
-    background-color: #329F5B;
+.percentBox{
+    background-color: #0D2818;
+    border-radius: 30px;
+    margin-top:100px;
+    padding: 20px;
+    box-shadow: none;
+    cursor: default;
 }
 
 .percentBox h2{
-    color: #EFEDED;
+    color: #EDF5E1;
     text-align: center;
+}
+
+#curiosities1, #curiosities2, #curiosities3 {
+    width:20%;
+    height: 40px;
+    margin: 0 30px 0 30px;
+    background-color: #020202;
+    color: #EDF5E1;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24);
+}
+
+#curiosities1:hover, #curiosities2:hover, #curiosities3:hover {
+    background-color: #058C42;
+}
+
+
+@media (max-width:1024px){
+
+    .center{
+        width: 80%;
+        margin: 0px 10% 50px 10%;
+    }
+    
+    .select {
+        width: 20%;
+        margin: 0 50px 0 10px;
+    }
+
+    .insideCards {
+        width: 20%;
+        height: 400px;
+        margin: 0 0 10px 10px;
+        padding: 30px 20px 0 20px;
+    }   
+
+    .insideCards img{
+        width: 100%;
+    }
+
+    .insideCards h3 {
+        font-size: 16px;
+    }
 }
 
 
 @media (max-width:768px) {
+
     #index{
         padding: 40px;
     }
@@ -174,152 +203,100 @@ select {
     }
 
     .center{
-        width: 100%;
-        margin: 0;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
+        width: 90%;
+        margin: 0px 5% 50px 5%;
     }
 
-    select {
-        height: 30px;
-        padding: 5px 8px;
-        width: 50%;
-        margin: 10px 0 20px 0;
-        color: #3D348B;
+    .select {
+        margin: 0 50px 0 10px;
     }
 
-    nav{
-        width: 100%;
-        margin: 0;
-        background: #EFEDED;
-        height: 80px;
-        display: flex;
-        position: fixed;
-        flex-direction:row;
-    }
-
-    .menu .logo {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    }
-
-    .menu .logo img {
-    height: 70px;
-    }
-
-    ul {
-        margin-top: 15px;
-        margin-right: 30px;
-        justify-content: space-between;
-        font-size: 17px;
-        list-style-type: none;
-        display: flex;
-    }
-
-    #curiosities1, #curiosities2, #curiosities3 {
-        width:30%;
-        background-color: #3D348B;
-        border-spacing: 20px;
-        border-radius: 20px;
-        color: white;
-    }
-    
-
+    .insideCards {
+        height: 320px;
+    } 
 }
 
-@media (max-width:320px){
+@media (max-width:670px){
 
     nav{
-        width: 100%;
-        margin: 0;
-        background: #EFEDED;
-        height: 200px;
-        display: flex;
-        position: fixed;
         flex-direction:column;
-    }
-
-    .menu .logo {
-        max-width: 100%;
-        height: 50px;
-        display: flex;
         justify-content: center;
-    }
-
-    .menu .logo img {
-        height: 50px;
-    }
-
-    ul {
-        width: 100%;
-        margin-top: 0;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        list-style-type: none;
     }
 
-    ul li button {
-        max-width: 100%;
-        width: 320px;
-        margin: 0;
-        padding-top: 10px;
+    .logo{
+        height: 60px;
+        margin-top: 10px;
+    }
+    
+    ul {
+        padding: 0;
+    }
+
+    label{
         font-size: 14px;
     }
 
-    #characters{
-        border-top: 2px solid rgba(165, 156, 156, 0.411);
+    .select {
+        width: 25%;
+        margin: 0 20px 0 10px;
     }
 
-    #curiosities{
-        border-bottom: 2px solid rgba(165, 156, 156, 0.411);
-        border-top: 2px solid rgba(165, 156, 156, 0.411);
-    }
+    .insideCards {
+        padding: 20px 20px 0 20px;
+    }   
 
-    #episodes{
-        border-bottom: 2px solid rgba(165, 156, 156, 0.411);
+    .insideCards h3 {
+        margin: 10px 0 0 0;
     }
+    
+}
 
-    #index{
-        padding: 10px;
+@media (max-width:420px){
+
+    ul li button {
+        font-size: 14px;
     }
-
-    #index img{
-        width: 80%;
+    
+    .center p{
+        font-size: 12px;
     }
 
     .center{
-        width: 100%;
-        margin-top: 100px;
-        display: flex;
         flex-direction: column;
-        text-align: center;
-    }
-    .center p{
-        margin-bottom: 20px;
     }
 
-    select {
-        height: 30px;
-        padding: 5px 8px;
-        width: 80%;
-        margin: 10px 0 20px 0;
-        color: #3D348B;
+    label{
+        color: #020202;
+    }
+    
+    .select {
+        width: 50%;
+        margin: 3px 0 15px 0;
+    }
+
+    .insideCards {
+        width: 50%;
+        height: 220px;
+        margin: 0 0 10px 0;
+        padding: 30px 20px 0 20px;
+    }   
+
+    .insideCards h3 {
+        font-size: 14px;
+    }
+
+    .insideCards p{
+        font-size: 12px;
     }
 
     #curiosities1, #curiosities2, #curiosities3 {
-        width:70%;
-        margin-top: 10px;
+        width:50%;
+        height: 30px;
+        margin: 0 0 20px 0;
     }
 
-    .percentBox {
-        background-color: #329F5B;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
-
+    .percentBox{
+        margin-top:50px;
+    }
 }

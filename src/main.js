@@ -26,7 +26,6 @@ dataRickAndMorty.forEach((show)=>{
       `<div class= "insideCards">
         <img src="${show.image}" alt="imgCharacter">
         <h3>${show.name}</h3>
-        <p>${show.species}</p>
         <p>${show.status}</p>
         <p>${show.gender}</p>
       </div>`

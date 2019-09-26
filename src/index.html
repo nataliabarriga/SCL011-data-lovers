@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="root">
-        <nav class="menu">
+        <nav>
         <div class="logo">
           <img src="img/logo.png" alt="LogoRick&Morty">
         </div>
@@ -22,7 +22,7 @@
         </nav>
         
         <div id="index">
-          <h1>Guía Rick & Morty</h1>
+          <h1></h1>
           <div class="center">
             <p>Bienvenidos a la Web Guía de Rick & Morty</p>
             <img src="img/fondo3.png">
@@ -33,6 +33,7 @@
           <h1>PERSONAJES</h1>
           <div class="center">
             <label>Filtrar por Especies:</label>
+            <div class="select">
               <select name="selector" id="filterSpeciesSelector">
                 <option value="">Seleccione una</option>
                 <option value="Alien">Aliens</option>
@@ -48,12 +49,15 @@
                 <option value="Robot">Robot</option> 
                 <option value="Vampire">Vampiro</option>
               </select>
+            </div>  
             <label>Ordenar por:</label>
+            <div class="select">
               <select name="selector" id="orderSelector">
                 <option value="">Seleccione una</option>
                 <option value="az">De la A a la Z</option>
                 <option value="za">De la Z a la A</option>
               </select>
+            </div>  
           </div>
           <div id="showData"></div>
         </div>
