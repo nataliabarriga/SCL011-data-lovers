@@ -26,6 +26,8 @@ window.sort = {
   } 
 }
 
+
+
 window.calculation = {
   Alive: (dataRickAndMorty) =>{
     const alive = dataRickAndMorty.filter(element =>{
@@ -68,15 +70,12 @@ window.calculation = {
       for (let i=0; i < dataRickAndMorty.length; i++) {
         for (let j=0; j < dataRickAndMorty[i].episode.length; j++) {
           if (dataRickAndMorty[i].episode[j] == conditionE) {
-
             filteredEpisodes.push(dataRickAndMorty[i]);
           }
         }
       }
       console.log(filteredEpisodes)
     return filteredEpisodes;
-    
-
     }
     
   }

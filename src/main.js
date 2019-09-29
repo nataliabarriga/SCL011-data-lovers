@@ -21,16 +21,76 @@ btnCharacters.addEventListener("click", ()=>{
 const showData = document.getElementById("showData");
 
 dataRickAndMorty.forEach((show)=>{
-  document.getElementById("showData").value = " ";
-  showData.innerHTML += 
-      `<div class= "insideCards">
-        <img src="${show.image}" alt="imgCharacter">
-        <h3>${show.name}</h3>
-        <p>${show.status}</p>
-        <p>${show.gender}</p>
-      </div>`
-});
+  const root = document.getElementById("root");
 
+  const insideCards = document.createElement("div");
+  insideCards.className = "insideCards";
+  const imgCharacter=document.createElement("img");
+  imgCharacter.src = show.image;
+  
+  const nameCharacters = document.createElement("h3");
+  nameCharacters.innerHTML = show.name;
+
+  const moreModal = document.createElement("button");
+  moreModal.textContent = ("Ver más");
+  moreModal.className = "moreModalBtn";
+
+  /* Modal*/
+
+  moreModal.addEventListener("click", ()=>{
+   
+    let modalWrap = document.createElement("div");
+    modalWrap.className ="modalWrap";
+
+    let modalBox = document.createElement("div");
+    modalBox.className = "modalBox";
+
+    let imgCharacterModal = document.createElement("img");
+    imgCharacterModal.className = "imgCharacterModal";
+    imgCharacterModal.src = dataRickAndMorty.image;
+
+    let nameCharactersModal= document.createElement("h3") ;
+    nameCharactersModal.className = "nameCharacterModal";
+    nameCharactersModal.innerHTML = dataRickAndMorty.name;
+
+    let statusCharacterModal = document.createElement("p");
+    statusCharacterModal.className = "statusCharacterModal";
+    statusCharacterModal.innerHTML = dataRickAndMorty.status;
+
+    let genderCharacterModal = document.createElement("p");
+    genderCharacterModal.className = "genderCharacterModal";
+    genderCharacterModal.innerHTML = dataRickAndMorty.gender;
+
+    let speciesCharacterModal = document.createElement("p");
+    speciesCharacterModal.className = "speciesCharacterModal";
+    speciesCharactersModal.innerHTML = dataRickAndMorty.species;
+
+    let btnCloseModal = document.createElement("button");
+    btnCloseModal.textContent = "X";
+    btnCloseModal.className ="btnCloseModal";
+
+    btnCloseModal.addEventListener("click", ()=>{
+      modalWrap.style.display="none";
+    });
+
+    modalBox.appendChild(imgCharacterModal);
+    modalBox.appendChild(nameCharactersModal);
+    modalBox.appendChild(statusCharacterModal);
+    modalBox.appendChild(genderCharacterModal);
+    modalBox.appendChild(speciesCharacterModal);
+    modalBox.appendChild(btnCloseModal);
+    modalWrap.appendChild(modalBox);
+    root.appendChild(modalWrap);
+  });
+
+  insideCards.appendChild(imgCharacter);
+  insideCards.appendChild(nameCharacters);
+  insideCards.appendChild(moreModal);
+
+  showData.appendChild(insideCards);
+
+  showData.innerHTML;
+});
 
 /* Función de filtrado */
 const filterSelector = document.getElementById("filterSpeciesSelector");

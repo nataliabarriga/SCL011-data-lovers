@@ -40,6 +40,7 @@ ul li button {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
 }
 
 ul li button:hover {
@@ -109,17 +110,16 @@ h1 {
 
 .insideCards {
     width: 15%;
-    height: 300px;
+    height: 320px;
     margin: 0 0 10px 10px;
-    padding: 30px 20px 0 20px;
-    background-color: #0D2818;
+    padding: 0 0 20px 0;
+    background-color: #058C42;
     border-radius: 30px;
-    cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 } 
 
 .insideCards h3 {
-    color: #32A064;
+    color: #EDF5E1;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -127,10 +127,84 @@ h1 {
 }
 
 .insideCards p{
-    color: #EDF5E1 ;
+    color: #EDF5E1;
     font-size: 14px;
     text-align: center;
 }
+
+.insideCards img{
+    width: 100%;
+    height: 60%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.moreModalBtn{
+    width: 50%;
+    height: 20px;
+    margin: 20px 25% 0 25%;
+    background-color: #EDF5E1;
+    color: #020202;
+    border-radius: 15px;
+    border: none;
+    font-size: 12px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.20);
+    cursor: pointer;
+}
+
+.moreModalBtn:hover{
+    background-color: #020202;
+    color: #EDF5E1;
+}
+
+.moreModalBtn:active{
+    background-color: #0D2818;
+    color: #EDF5E1;
+}
+
+/*** Estilos Modal ***/
+
+ .modalWrap{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:0;
+    transition:all 1s;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modalBox{
+    width: 50%;
+    height: 50%;
+    margin: 10% auto;
+    padding: 50px;
+    border-radius: 30px;
+    color: #020202;
+    background-color: #EDF5E1;
+    display: flex;
+}
+
+.imgCharacterModal{
+    width: 80%;
+    height: 80%;
+}
+
+.btnCloseModal{
+    border: 1px solid black;
+    height: 5%;
+    padding:10px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color:#020202;
+}
+
+
+/*** Fin Estilos Modal ***/
+
 
 .percentBox{
     background-color: #0D2818;
@@ -177,13 +251,13 @@ h1 {
 
     .insideCards {
         width: 20%;
-        height: 400px;
+        height: 300px;
         margin: 0 0 10px 10px;
-        padding: 30px 20px 0 20px;
     }   
 
     .insideCards img{
-        width: 100%;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
     }
 
     .insideCards h3 {
@@ -212,8 +286,16 @@ h1 {
     }
 
     .insideCards {
-        height: 320px;
+        height: 250px;
     } 
+
+    .insideCards h3 {
+        font-size: 14px;
+    }
+
+    .insideCards img{
+        height: 58%;
+    }
 }
 
 @media (max-width:670px){
@@ -240,14 +322,26 @@ h1 {
     .select {
         width: 25%;
         margin: 0 20px 0 10px;
-    }
+    } 
 
     .insideCards {
-        padding: 20px 20px 0 20px;
-    }   
+        height: 220px;
+    } 
 
     .insideCards h3 {
-        margin: 10px 0 0 0;
+        margin: 20px 5px 0 5px;
+    }
+
+    .insideCards img{
+        height: 55%;
+    }
+
+    .moreModalBtn{
+        width: 60%;
+        height: 18px;
+        margin: 20px 20% 0 20%;
+        font-size: 10px;
+        box-shadow: 0 8px 8px 0 rgba(0,0,0,0.20);
     }
     
 }
@@ -275,19 +369,28 @@ h1 {
         margin: 3px 0 15px 0;
     }
 
+    .insideCards img{
+        height: 55%;
+    }
+
     .insideCards {
         width: 50%;
-        height: 220px;
-        margin: 0 0 10px 0;
-        padding: 30px 20px 0 20px;
+        height: 250px;
+        margin: 0 10px 10px 10px;
+        padding-bottom: 10px
     }   
 
     .insideCards h3 {
         font-size: 14px;
+        margin: 0 0 0 0;
     }
 
     .insideCards p{
         font-size: 12px;
+    }
+
+    .insideCards img{
+        height: 60%;
     }
 
     #curiosities1, #curiosities2, #curiosities3 {
