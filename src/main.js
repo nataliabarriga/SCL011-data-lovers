@@ -61,7 +61,6 @@ const finalFilter = filterSpeciesResult.map((showFilter)=>{
   `<div class ="insideCards">
     <img src="${showFilter.image}" alt="imgCharacter">
     <h3>${showFilter.name}</h3>
-    <p>${showFilter.species}</p>
     <p>${showFilter.status}</p>
     <p>${showFilter.gender}</p>
   </div>`
@@ -84,7 +83,6 @@ const finalOrder = orderResult.map((showOrder)=>{
   `<div class ="insideCards">
     <img src="${showOrder.image}" alt="imgCharacter">
     <h3>${showOrder.name}</h3>
-    <p>${showOrder.species}</p>
     <p>${showOrder.status}</p>
     <p>${showOrder.gender}</p>
   </div>`
