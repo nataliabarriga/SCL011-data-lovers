@@ -121,8 +121,11 @@ const btnCuriosities1 = document.getElementById("curiosities1");
 btnCuriosities1.addEventListener("click", () =>{
   
   showCalculation.innerHTML = 
-  `<div class="percentBox">
-  <h2>El ${aliveCalculation}% de los personajes están vivos</h2>
+  `<div class="modalWrap1" id="modalWrap1" >
+    <div class="percentBox">
+      <a class="modalCLose" href="#">X</a>
+      <h2>El ${aliveCalculation}% de los personajes están vivos</h2>
+    </div>
   </div>
   `;
 })
@@ -131,18 +134,24 @@ const btnCuriosities2 = document.getElementById("curiosities2");
 btnCuriosities2.addEventListener("click", () =>{
   
   showCalculation.innerHTML = 
-  `<div class="percentBox">
-  <h2>El ${femaleCalculation}% de los personajes son mujeres</h2>
+  `<div class="modalWrap2" id="modalWrap2">
+  <div class="percentBox">
+    <a class="modalCLose" href="#">X</a>
+    <h2>El ${femaleCalculation}% de los personajes son mujeres</h2>
   </div>
-  `;
+</div>
+`;
 })
 
 const btnCuriosities3 = document.getElementById("curiosities3");
 btnCuriosities3.addEventListener("click", () =>{
-  
-  showCalculation.innerHTML = 
-  `<div class="percentBox">
-  <h2>El ${humanoidCalculation}% de los personajes son humanoides</h2>
+
+  showCalculation.innerHTML =
+  `<div class="modalWrap3" id="modalWrap3">
+  <div class="percentBox">
+    <a class="modalCLose" href="#">X</a>
+    <h2>El ${humanoidCalculation}% de los personajes son humanoides</h2>
   </div>
-  `;
-})
+</div>
+`;
+});
