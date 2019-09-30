@@ -123,7 +123,7 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin: 20px 0 0 0;
+    margin: 20px 0 10px 0;
 }
 
 .insideCards p{
@@ -193,13 +193,9 @@ h1 {
     height: 80%;
 }
 
-.btnCloseModal{
-    border: 1px solid black;
-    height: 5%;
-    padding:10px 10px;
-    font-size: 20px;
-    text-decoration: none;
-    color:#020202;
+.insideCards p {
+    font-size: 14px;
+    margin: 0;
 }
 
 
@@ -292,6 +288,9 @@ h1 {
     .insideCards h3 {
         font-size: 14px;
     }
+    .insideCards p{
+        font-size: 12px;
+    }
 
     .insideCards img{
         height: 58%;
@@ -329,9 +328,11 @@ h1 {
     } 
 
     .insideCards h3 {
-        margin: 20px 5px 0 5px;
+        margin: 20px 5px 10px 5px;
     }
-
+    .insideCards p{
+        font-size: 12px;
+    }
     .insideCards img{
         height: 55%;
     }
@@ -382,7 +383,6 @@ h1 {
 
     .insideCards h3 {
         font-size: 14px;
-        margin: 0 0 0 0;
     }
 
     .insideCards p{

@@ -21,71 +21,26 @@ btnCharacters.addEventListener("click", ()=>{
 const showData = document.getElementById("showData");
 
 dataRickAndMorty.forEach((show)=>{
-  const root = document.getElementById("root");
 
   const insideCards = document.createElement("div");
   insideCards.className = "insideCards";
+
   const imgCharacter=document.createElement("img");
   imgCharacter.src = show.image;
   
   const nameCharacters = document.createElement("h3");
   nameCharacters.innerHTML = show.name;
 
-  const moreModal = document.createElement("button");
-  moreModal.textContent = ("Ver más");
-  moreModal.className = "moreModalBtn";
+  const statusCharacters = document.createElement("p")
+  statusCharacters.innerHTML = show.status;
 
-  /* Modal*/
-
-  moreModal.addEventListener("click", ()=>{
-   
-    let modalWrap = document.createElement("div");
-    modalWrap.className ="modalWrap";
-
-    let modalBox = document.createElement("div");
-    modalBox.className = "modalBox";
-
-    let imgCharacterModal = document.createElement("img");
-    imgCharacterModal.className = "imgCharacterModal";
-    imgCharacterModal.src = dataRickAndMorty.image;
-
-    let nameCharactersModal= document.createElement("h3") ;
-    nameCharactersModal.className = "nameCharacterModal";
-    nameCharactersModal.innerHTML = dataRickAndMorty.name;
-
-    let statusCharacterModal = document.createElement("p");
-    statusCharacterModal.className = "statusCharacterModal";
-    statusCharacterModal.innerHTML = dataRickAndMorty.status;
-
-    let genderCharacterModal = document.createElement("p");
-    genderCharacterModal.className = "genderCharacterModal";
-    genderCharacterModal.innerHTML = dataRickAndMorty.gender;
-
-    let speciesCharacterModal = document.createElement("p");
-    speciesCharacterModal.className = "speciesCharacterModal";
-    speciesCharactersModal.innerHTML = dataRickAndMorty.species;
-
-    let btnCloseModal = document.createElement("button");
-    btnCloseModal.textContent = "X";
-    btnCloseModal.className ="btnCloseModal";
-
-    btnCloseModal.addEventListener("click", ()=>{
-      modalWrap.style.display="none";
-    });
-
-    modalBox.appendChild(imgCharacterModal);
-    modalBox.appendChild(nameCharactersModal);
-    modalBox.appendChild(statusCharacterModal);
-    modalBox.appendChild(genderCharacterModal);
-    modalBox.appendChild(speciesCharacterModal);
-    modalBox.appendChild(btnCloseModal);
-    modalWrap.appendChild(modalBox);
-    root.appendChild(modalWrap);
-  });
+  const genderCharacters = document.createElement("p");
+  genderCharacters.innerHTML = show.gender;
 
   insideCards.appendChild(imgCharacter);
   insideCards.appendChild(nameCharacters);
-  insideCards.appendChild(moreModal);
+  insideCards.appendChild(statusCharacters);
+  insideCards.appendChild(genderCharacters);
 
   showData.appendChild(insideCards);
 
@@ -163,7 +118,7 @@ const femaleCalculation = window.calculation.computeStatsFemale(dataRickAndMorty
 const humanoidCalculation = window.calculation.computeStatsHumanoid(dataRickAndMorty);
 
 const btnCuriosities1 = document.getElementById("curiosities1");
-btnCuriosities1.addEventListener("click", (calculation) =>{
+btnCuriosities1.addEventListener("click", () =>{
   
   showCalculation.innerHTML = 
   `<div class="percentBox">
@@ -173,7 +128,7 @@ btnCuriosities1.addEventListener("click", (calculation) =>{
 })
 
 const btnCuriosities2 = document.getElementById("curiosities2");
-btnCuriosities2.addEventListener("click", (calculation) =>{
+btnCuriosities2.addEventListener("click", () =>{
   
   showCalculation.innerHTML = 
   `<div class="percentBox">
@@ -183,7 +138,7 @@ btnCuriosities2.addEventListener("click", (calculation) =>{
 })
 
 const btnCuriosities3 = document.getElementById("curiosities3");
-btnCuriosities3.addEventListener("click", (calculation) =>{
+btnCuriosities3.addEventListener("click", () =>{
   
   showCalculation.innerHTML = 
   `<div class="percentBox">
@@ -191,50 +146,3 @@ btnCuriosities3.addEventListener("click", (calculation) =>{
   </div>
   `;
 })
-
-
-/* mostrar episodios 
-
-const dataRickAndMortyEpisode = window.RICKANDMORTY.episode;
-
-const btnEpisodes = document.getElementById("episodes");
-btnEpisodes.addEventListener("click", ()=>{
-
-  const showEpisodesResult = document.getElementById("showEpisodes");
-  showEpisodesResult.style.display = "block";
-
-  const hiddenCuriosities = document.getElementById("showCuriosities");
-  hiddenCuriosities.style.display = "none";
-
-  const hiddenCharacters = document.getElementById("showCharacters");
-  hiddenCharacters.style.display = "none";
-
-});  
-
-episodios 
-
-
-const seasonSelector = document.getElementById("season");
-seasonSelector.addEventListener('change', () => {
-let conditionE = seasonSelector.options[seasonSelector.selectedIndex].value;
-
-let episodesResult = window.episodes.episode(dataRickAndMorty,conditionE);
-
-
-document.getElementById("showDataEpisodes").innerHTML="";
-const finalEpisode = episodesResult.map((showDataEpisodes)=>{
-  showDataEpisodes.innerHTML += 
-  `<div class ="insideCards">
-    <h3>${showDataEpisodes.id}</h3>
-    <p>${showDataEpisodes.name}</p>
-    <p>${showDataEpisodes.episode}</p>
-  </div>`
-
-});
-
-return finalEpisode;
-
- 
-}); 
-
-*/
